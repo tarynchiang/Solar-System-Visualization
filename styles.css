@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: white;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 2px;
+      }
+
+      .description {
+        width: 70%;
+
+        .summary {
+          text-align: center;
+        }
+      }
+    }
+
+    canvas {
+      background-color: white;
+    }
+  }
+}

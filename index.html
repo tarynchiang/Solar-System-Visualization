@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Visualization</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>Solar System Visualization</h1>
+            <div class="description">
+                <p class="summary">Experience a stunning visual representation of the solar system with a focus on the
+                    Sun, Earth, and
+                    Moon.<br> This static display uses advanced graphical techniques to create a lifelike depiction of
+                    these
+                    celestial bodies in space.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li><strong>Advanced Celestial Mechanics:</strong> Real-time simulation of <strong>solar</strong>,
+                        <strong>lunar</strong>, and <strong>terrestrial dynamics</strong>, accurately depicting their
+                        relative positions and interactions.
+                    </li>
+                    <li><strong>Detailed Surface Rendering:</strong> Utilizes <strong>high-resolution textures</strong>
+                        and <strong>procedural turbulence</strong> to render realistic surfaces for the Sun, Earth, and
+                        Moon.</li>
+                    <li><strong>Dynamic Lighting and Shadows:</strong> Implements complex lighting models, including
+                        <strong>Phong shading</strong> and <em>ambient, diffuse, and specular components</em>, to mimic
+                        natural lighting conditions in space.
+                    </li>
+                    <li><strong>Ray-Sphere Intersection:</strong> Efficient calculations for <strong>ray
+                            tracing</strong>, detecting intersections with celestial bodies to render views from any
+                        perspective.</li>
+                    <li><strong>Atmospheric and Phenomenal Effects:</strong> Simulates <strong>atmospheric
+                            scattering</strong> on Earth and dynamic <strong>corona effects</strong> around the Sun,
+                        enhancing the visual realism of sunrise and sunset transitions.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <center>
+                <canvas id="canvas1" width="1000" height="500"></canvas>
+            </center>
+        </div>
+    </div>
+</body>
+
+<script type="module" src="src/scene-configs.js"></script>
+<script type="module" src="src/webgl-manager.js"></script>
+<script type="module" src="src/shaders.js"></script>
+<script type="module" src="src/main.js"></script>
+
+</html>
